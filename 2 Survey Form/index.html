@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title id="title">Survey Form</title>
+</head>
+<body>
+    <header>
+        <h1 id="title"><i> Encuesta de Satisfacción</i> <br> Club Cannábico Cannabienses</h1>
+        <p id="description">Con esta encuensta, dirigida a nuestros miembros, intentaremos recopilar información sobre la opinión que nuestros miembros tienen sobre el Club, nuestras razas y nuestras políticas.</p>
+    </header>
+    <main id="main">
+        <form id="survey-form" action="">
+            <div class="formInput">
+            <label for="name">Nombre</label>
+            <input required id="name" type="text" aria-label="Name input" placeholder="Ingresa tu Nombre">
+            </div>
+            <div class="formInput">
+                <label for="email">Email</label>
+                <input required id="email" type="email" aria-label="Email Input" placeholder="Ingresa tu email">
+                </div>
+            <div class="formInput">
+                <label for="age">Edad</label>
+                <input id="number" required type="number" min="18" max="99" aria-label="Age Input" placeholder="Ingresa tu edad">
+            </div>
+            <div class="formInput">
+                <label for="amount">Cuánto retiraste la última vez?</label>
+                <select name="amountSelect" id="">
+                    <option value="25orless">25g o menos</option>
+                    <option value="25">25g</option>
+                    <option value="30">30g</option>
+                    <option value="35">35g</option>
+                    <option value="40">40g</option>
+                    <option value="40ormore">40g o más</option>
+                </select>
+                
+            </div>
+            <div class="formSelect">
+                <h2>Cuáles Razas retiraste la última vez?</h2>
+                <div class="inputLabelPair">
+                <input type="checkbox" id="raza1" name="raza1" value="Malibu">
+                <label for="raza1">Malibu</label></div>
+                <div class="inputLabelPair">
+                <input type="checkbox" id="raza2" name="raza2" value="Sunday x Wedding">
+                <label for="raza2">Sunday x Wedding</label></div>
+                <div class="inputLabelPair">
+                <input type="checkbox" id="raza3" name="raza3" value="Lemon Haze">
+                <label for="raza3">Lemon Haze</label></div>
+                <div class="inputLabelPair">
+                <input type="checkbox" id="raza4" name="raza4" value="Blueberry">
+                <label for="raza4">Blueberry</label></div>
+                <div class="inputLabelPair">
+                <input type="checkbox" id="raza5" name="raza5" value="Ak x Amnesia">
+                <label for="raza5">Ak x Amnesia</label></div>
+                <div class="inputLabelPair">
+                <input type="checkbox" id="raza6" name="raza6" value="24 Kilates">
+                <label for="raza6">24 Kilates</label></div>
+
+            </div>
+            <button type="submit">Enviar a lo loco</button>
+        </form>
+    </main>
+    
+</body>
+</html>
